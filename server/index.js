@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const env = require('dotenv');
 const Clients = require('./models/Clients');
 
 const app = express();
@@ -27,12 +28,16 @@ app.get('/', async (req, res) => {
     }
     
 });
-mongoose.connect('mongodb+srv://bene:369369@cluster0.k9q6vh5.mongodb.net/?retryWrites=true&w=majority',
-    { useNewUrlParser: true, useUnifiedTopology: false }).then(() => {
-        console.log('Connected to MongoDB');
-    }).catch((err) => {
-        console.log('Error connecting to MongoDB', err);
-    });
+//use .env file
+env.config();
+mongoose.connect(process.env.DATABASE, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,    
+}).then(() => {
+    console.log('DB CONNECTED');
+}).catch((err) => {
+    console.log(err);
+});
 
 app.listen(PORT, () => {
     console.log(`Server running on port http://localhost:${PORT}`);
