@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import LOGO from '../img/logo.png';
-import { Users } from './users';
-import { ContratosEM } from './ContratosEM';
+import { Users } from '../components/users';
+import { ContratosEM } from '../components/ContratosEM';
 import './contratos.css';
 function contratos() {
   return (

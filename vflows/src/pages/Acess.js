@@ -1,25 +1,27 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React,{useRef} from 'react'
-import ReactInputMask from 'react-input-mask';
+import React, { useRef } from 'react'
 import { IMaskInput } from 'react-imask';
 import LOGO from '../img/logo.png';
 import './Acess.css';
 
 function form() {
-   const ref = useRef(null);
-   const inputRef = useRef(null);
-   //verifica se o CNPJ é valido ou não e se for ele retorna true e vai para a pagina de contratos se nao ele retorna false e um alerta
-   const ValidarCNPJ = () => {
-    //pegar o valor do input
-    const cnpj = inputRef.current.value;
-    if (cnpj.length < 18) {
-        alert('CNPJ invalido')
-    } else {
-        alert('CNPJ valido')
+    const ref = useRef(null);
+    const inputRef = useRef(null);
+    //verifica se o CNPJ é valido ou não e se for ele retorna true e vai para a pagina de contratos se nao ele retorna false e um alerta
+    const ValidarCNPJ = () => {
+         const cnpj = inputRef.current.value;
+        
+        const regex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
+        
+        if (regex.test(cnpj)) {
+              window.location.href = "/contratos";
+        } else {
+            
+            alert('CNPJ invalido');
+        }
+
     }
 
-   }
-   
 
     return (
         <div className="Card">
@@ -47,7 +49,7 @@ function form() {
                 autofix={true}
                 placeholder='ENSIRA O CNPJ'
                 className='input'
-            />            
+            />
             <button className='botao' onClick={ValidarCNPJ}>Enviar</button>
 
         </div>

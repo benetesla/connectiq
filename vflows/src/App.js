@@ -3,10 +3,10 @@
 import './App.css';
 import LOGO from './img/logo.png';
 import { BrowserRouter, Routes, Route } from "react-router-dom"; 
-import Form from './components/Acess';
-import Contracts from './components/contratos';
+import Form from './pages/Acess';
+import Contracts from './pages/contratos';
 import React from 'react';
-import DadosNF from './components/DadosNF';
+import DadosNF from './pages/DadosNF';
 function App() {
   const DarKmode = () => {
     if (document.body.classList.contains('dark')) {

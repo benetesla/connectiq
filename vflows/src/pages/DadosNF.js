@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.css';
+import './DadosNF.css';
 const DadosNF = () => {
     return (
         <div className='card'>

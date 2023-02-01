@@ -8,9 +8,9 @@
 
 ## Referência
 
- - [NODE](https://nodejs.org/en/)
+
  - [React](https://reactjs.org/docs/create-a-new-react-app.html)
- - [MongoDB](https://www.mongodb.com/docs/realm/)
+ 
 
  
 
