@@ -2,15 +2,18 @@
 /* eslint-disable no-undef */
 import './App.css';
 import LOGO from './img/logo.png';
-import { BrowserRouter, Routes, Route } from "react-router-dom"; import Form from './components/Form';
+import { BrowserRouter, Routes, Route } from "react-router-dom"; 
+import Form from './components/Acess';
+import Contracts from './components/contratos';
 import React from 'react';
+import DadosNF from './components/DadosNF';
 function App() {
   const DarKmode = () => {
     if (document.body.classList.contains('dark')) {
       document.body.classList.remove('dark');
       document.body.style.backgroundColor = '#fff';
       document.body.style.color = '#000';
-    }else{
+    } else {
       document.body.style.backgroundColor = '#000';
       document.body.style.color = '#fff';
       document.body.classList.add('dark');
@@ -34,13 +37,18 @@ function App() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
+                <a className="nav-link" href="/contratos">
+                  <i className="fas fa-file-invoice-dollar"></i>
+                </a>
               </li>
-           {/* darkmode */}
+              <li className="nav-item">
+                <a className="nav-link" href="/dadosNF">
+                  <i className="fas fa-file-invoice"></i>
+                </a>
+              </li>
               <li className='nav-item'>
                 <button className="btn btn-dark" onClick={DarKmode}> <i className="fas fa-moon"></i></button>
-               </li>
-                  
+              </li>
             </ul>
 
           </div>
@@ -49,6 +57,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Form />} />
+          < Route path="/contratos" element={<Contracts />} />
+          <Route path="/dadosNF" element={<DadosNF />} />
         </Routes>
       </BrowserRouter>
     </>
