@@ -26,8 +26,9 @@ function form() {
             <img src={LOGO} alt="logo" />
             <h1>VFLOWS</h1>
             <Form ref={formRef} onSubmit={handleSubmit}>
-                <input name="cnpj" placeholder="CNPJ" />
-                <button type="submit" onClick={ValidarCNPJ}>Enviar</button>
+                <label className='label'>CNPJ</label>
+                <input className='Input' name="cnpj" placeholder="CNPJ" />
+                <button className='botao' type="submit" onClick={ValidarCNPJ}>Acessar</button>
             </Form>
             
         </div>
