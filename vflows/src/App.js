@@ -14,14 +14,14 @@ function App() {
       document.body.style.backgroundColor = '#fff';
       document.body.style.color = '#000';
     } else {
-      document.body.style.backgroundColor = '#000';
-      document.body.style.color = '#fff';
+      document.body.style.backgroundColor = '#1b1b1b';
+      document.body.style.color = '#edf5f4';
       document.body.classList.add('dark');
     }
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img src={LOGO} className='LOGOTIPO' alt="logo" />
@@ -32,7 +32,7 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a className="nav-link active" aria-current="page" href="/">
                   <i className="fas fa-home"></i>
                 </a>
               </li>

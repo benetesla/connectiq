@@ -1,9 +1,10 @@
 import React from 'react';
-
+import './Card.css';
 const DadosNF = () => {
     return (
-        <div>
-            <h1>Dados da NF</h1>
+        <div className='card'>
+
+            {/**voltar para a pagina de acessar */}
         </div>
     );
 }
