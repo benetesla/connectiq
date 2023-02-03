@@ -1,73 +1,158 @@
-.cartaoFonecedore {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
+/*inicio container */
+.Conteudo__Fundo{
+    background-color: #a7a3a3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffefe;
+    margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 5px;
-    background-color: rgb(231, 221, 221);
 }
 
-.cartaoFonecedore h4 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
-    color: #000;
+.container .top__CONTAINER {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.cartaoFonecedore img {
-    width: 50px;
+
+.container .IMG__CONTAINER {
+    width: 25px;
+    height: 25px;
+    margin-left: -100px;
+    margin-right: 15px;
+}
+
+.container .H1__CONTAINER {
+    padding: 15px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bottom__CONTAINER {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom__CONTAINER .BTN__CONTAINER1 {
+    width: 100px;
     height: 50px;
+    background-color: #4ff502;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.card {
-    display: grid;
-    grid-template-columns: 1fr ;
-    gap: 1rem;
-    margin: 1rem;
-    padding: 1rem;
-    border: none;
+.bottom__CONTAINER .BTN__CONTAINER2 {
+    width: 100px;
+    height: 50px;
+    background-color: #f5f103;
+    border: 1px solid #000;
     border-radius: 5px;
-    background-color: rgb(231, 221, 221);
+    margin: 10px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.CentroCard1{
-    display: block;
-    margin: 0 auto;
-    padding: 0;
+
+.bottom__CONTAINER .BTN__CONTAINER1:hover {
+    background-color: #000;
+    color: #fff;
 }
-h6 {
+
+.bottom__CONTAINER .BTN__CONTAINER2:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/*fim container */
+/*inicio tabela empresa*/
+
+.table__CONTAINER {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(240, 6, 6);
+    border-style: double;
+    
+}
+
+
+.table__CONTAINER .table__CONTAINER__LEFT {
+    text-align: left;
+    margin: 15px;
+}
+
+
+.table__CONTAINER .table__CONTAINER__RIGHT {
+    text-align: right;
+    margin: 15px;
+    margin-top: -5px;
+}
+
+/*fim tabela empresa*/
+/*inicio tabela contrato*/
+.H2__CONTAINER {
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 15px;
     text-align: center;
-    font-size: 1.5rem;
-    color: #000;
-
-}
-/*Centralizar tabela os elementos da tabela*/
-table {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    border: 1px solid #ccc;
-}
-thead {
-    background-color: #ccc;
-
-}
-/*fixar o botao no lado direito*/
-button {
-    float: right;
-    margin: 4px 2px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ccc;
-    color: #000;
-    font-size: 1rem;
-    cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-    .cartaoFonecedore {
-        grid-template-columns: 1fr;
+/*inicio Rodape */
+.footer__CONTAINER {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__CONTAINER .IMG__FOOTER {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
+@media screen and (max-width: 768px) {
+    .container .IMG__CONTAINER {
+        margin-left: 0px;
+    }
+    .container .H1__CONTAINER {
+        padding: 0px;
+    }
+    .table__CONTAINER .table__CONTAINER__LEFT {
+        text-align: center;
+    }
+    .table__CONTAINER .table__CONTAINER__RIGHT {
+        text-align: center;
+    }
+    .footer__CONTAINER .IMG__FOOTER {
+        margin-left: 0px;
     }
 }

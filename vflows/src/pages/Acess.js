@@ -7,7 +7,6 @@ import './Acess.css';
 function form() {
     const ref = useRef(null);
     const inputRef = useRef(null);
-    //verifica se o CNPJ é valido ou não e se for ele retorna true e vai para a pagina de contratos se nao ele retorna false e um alerta
     const ValidarCNPJ = () => {
          const cnpj = inputRef.current.value;
         
@@ -25,7 +24,7 @@ function form() {
 
     return (
         <div className="Card">
-            <img src={LOGO} alt="logo" />
+            <img className="Image" src={LOGO} alt="logo" />
             <h1>Pagamento de Fornecedor</h1>
             <IMaskInput
                 mask="00.000.000/0000-00"
@@ -50,8 +49,7 @@ function form() {
                 placeholder='ENSIRA O CNPJ'
                 className='input'
             />
-            <button className='botao' onClick={ValidarCNPJ}>Enviar</button>
-
+            <button className='btn__Val' onClick={ValidarCNPJ}>Acessar</button>
         </div>
     )
 }
