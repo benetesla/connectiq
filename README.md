@@ -1,8 +1,6 @@
 
 # Test-Fron-end-VFlows
-
-**Em construção,esta aplicação se encontra em fase de construção**
-
+Portififolio para o desafio front end da @VFlows
 
 
 
@@ -75,7 +73,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd Test-Fron-end-VFlows
+  cd vflows
 ```
 
 Instale as dependências
@@ -87,6 +85,6 @@ Instale as dependências
 Inicie o servidor
 
 ```bash
-  npm run start
+  npm  start
 ```
 
