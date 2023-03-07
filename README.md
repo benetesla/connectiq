@@ -28,9 +28,9 @@
 Instale Test-Fron-end-VFlows com npm
 
 ```bash
-  git clone https://github.com/benetesla/Test-Fron-end-VFlows.git
-  npm install Test-Fron-end-VFlows
-  cd Test-Fron-end-VFlows
+  git clone https://github.com/benetesla/connectiq.git
+  npm install connectiq
+  cd connectiq
   npm star
 ```
 
