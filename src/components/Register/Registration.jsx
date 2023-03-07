@@ -72,12 +72,12 @@ const Registration = () => {
                   </label>
                   <input type="text" name="adress" id="adress" className="form-control" value={adress} onChange={e => adressChange(e.target.value)} />
                   <label htmlFor="role">
-                    <i className="fas fa-user" aria-hidden="true"></i>Gender
+                    <i className="fas fa-user" aria-hidden="true"></i> Role
                   </label>
                   <select name="role" id="role" className="form-control" value={role} onChange={e => roleChange(e.target.value)}>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
+                    <option value="0">Select</option>
+                    <option value="1">Admin</option>
+                    <option value="2">User</option>
                   </select>
                 </div>
               </div>
