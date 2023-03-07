@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify'
 import './Register.css'
 const Registration = () => {
   const [id, idChange] = useState(0)
@@ -8,11 +9,11 @@ const Registration = () => {
   const [phone, phoneChange] = useState('')
   const [country, countryChange] = useState('')
   const [adress, adressChange] = useState('')
-  const [role, roleChange] = useState('')
+  const [role, roleChange] = useState('0')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const data = {
+    let user = {
       id: id,
       name: name,
       password: password,
@@ -22,8 +23,22 @@ const Registration = () => {
       adress: adress,
       role: role
     }
-    idChange(id + 1)
-    console.log(data)
+   //user fetch to post data
+    fetch(`http://localhost:3000/users${idChange(id + 1)}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        body : JSON.stringify(user)
+      }
+    })
+      .then((data) => {
+        toast.success('User registered successfully')
+        console.log(data)
+      })
+      .catch((error) => {
+        toast.error('Error registering user')
+        console.log(error)
+      })
 
   }
   return (
