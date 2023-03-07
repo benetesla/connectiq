@@ -1,7 +1,7 @@
 
 # connect👨‍💻IQ
 
---Sistema em construcao--
+Sistema de gerenciamento de usuario com um banco de dados Falso(json-server)
 
 
 
