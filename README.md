@@ -49,43 +49,5 @@ Instale Test-Fron-end-VFlows com npm
 Insira um gif ou um link de alguma demonstração
 
 
-## Variáveis de Ambiente
 
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
-
-## Licença
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
-## Rodando localmente
-
-Clone o projeto
-
-```bash
-  git clone https://github.com/benetesla/Test-Fron-end-VFlows.git
-```
-
-Entre no diretório do projeto
-
-```bash
-  cd vflows
-```
-
-Instale as dependências
-
-```bash
-  npm install
-```
-
-Inicie o servidor
-
-```bash
-  npm  start
-```
 
